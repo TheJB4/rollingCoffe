@@ -1,11 +1,12 @@
 import { Container } from "react-bootstrap"
 import errorImage from '../../assets/error404.png'
+import { Link } from "react-router-dom"
 
 const Error404 = () => {
-    return(
+    return (
         <Container className="h-100 w-100 d-flex flex-column justify-content-start align-items-center">
             <img src={errorImage} alt="" />
-            <button>Volver al inicio</button>
+            <button>            <Link to="/">Volver al inicio</Link></button>
         </Container>
     )
 }

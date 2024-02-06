@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
 
 export default function NuestrosProductos() {
     return (
@@ -39,7 +40,9 @@ export default function NuestrosProductos() {
                                 Precio: $250
                             </Card.Text>
                             <div className="mt-auto pt-2 border-top d-flex justify-content-end">
-                                <Button className='bg-green'>Ver más</Button>
+                                <Button className='bg-green'>
+                                    <Link to={`/producto/:productId`} >Ver más</Link>
+                                </Button>
                             </div>
                         </Card.Body>
                     </Card>
